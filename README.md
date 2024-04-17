@@ -21,4 +21,4 @@ Kubernetes raises the delay between each attempt until it reaches a compiled-in 
 
 ### CrashLoopBackOff
 
-This state occurs when the container within the pod repeatedly crashes shortly after starting up. Kubernetes continuously restarts the pod, but if the container keeps crashing, it enters a backoff state where it waits before attempting to restart the pod again. This typically indicates problems within the container itself, such as application errors, misconfigurations, or resource constraints.
+When you see "CrashLoopBackOff," it means that kubelet is trying to run the container, but it keeps failing and crashing. After crashing, Kubernetes tries to restart the container automatically, but if the container keeps failing repeatedly, you end up in a loop of crashes and restarts — thus the term "CrashLoopBackOff." This situation indicates that something is wrong with the application or the configuration that needs to be fixed.
