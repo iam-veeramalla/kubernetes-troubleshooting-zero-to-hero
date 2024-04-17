@@ -5,6 +5,8 @@ Learn how to troubleshoot the most common Kubernetes Issues
 
 ### ImagePullBackOff
 
+Video Link - https://youtu.be/vGab4v3RWEw
+
 When a kubelet starts creating containers for a Pod using a container runtime, it might be possible the container is in Waiting state because of ImagePullBackOff.
 
 The status ImagePullBackOff means that a container could not start because Kubernetes could not pull a container image for reasons such as 
@@ -21,4 +23,6 @@ Kubernetes raises the delay between each attempt until it reaches a compiled-in 
 
 ### CrashLoopBackOff
 
-When you see "CrashLoopBackOff," it means that kubelet is trying to run the container, but it keeps failing and crashing. After crashing, Kubernetes tries to restart the container automatically, but if the container keeps failing repeatedly, you end up in a loop of crashes and restarts — thus the term "CrashLoopBackOff." This situation indicates that something is wrong with the application or the configuration that needs to be fixed.
+When you see "CrashLoopBackOff," it means that kubelet is trying to run the container, but it keeps failing and crashing. After crashing, Kubernetes tries to restart the container automatically, but if the container keeps failing repeatedly, you end up in a loop of crashes and restarts, thus the term "CrashLoopBackOff." 
+
+This situation indicates that something is wrong with the application or the configuration that needs to be fixed.
