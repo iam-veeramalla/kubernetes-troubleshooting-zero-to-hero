@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: crashlooplearning
-        image: abhishekf5/crashlooptest:v2
+        image: irislali12/crashlooptest:v2
         ports:
         - containerPort: 8000
         livenessProbe:
