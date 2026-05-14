@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       nodeSelector:
-        foo: bar
+        node-name: arm-worker
       containers:
       - name: nginx
         image: nginx:1.14.2

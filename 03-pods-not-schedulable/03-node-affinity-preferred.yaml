@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
@@ -20,10 +20,10 @@ spec:
         - weight: 1
           preference:
            matchExpressions:
-           - key: foo
+           - key: node-arch
              operator: In
              values:
-             - bar
+             - windows
       containers:
       - name: nginx
         image: nginx:1.14.2
