@@ -22,7 +22,8 @@ spec:
         livenessProbe:
          exec:
           command:
-           - cat
+           - cats
            - /tmp/healthy
          initialDelaySeconds: 0
          periodSeconds: 1
+         
